@@ -4,7 +4,7 @@ export PS1="
 
 export CLICOLOR=1
 
-export LSCOLORS=GxFxCxDxBxegedabagacad
+export LSCOLORS=exfxcxdxbxegedabagacad
 
 export EDITOR="/usr/local/bin/nvim"
 
@@ -16,6 +16,12 @@ alias rm='rm -v'
 alias mkdir='mkdir -v'
 alias javacfx='javac --module-path ${PATH_TO_FX}'
 alias javafx='java --module-path ${PATH_TO_FX}'
+alias vim='nvim'
+alias vimdiff='nvim -d'
+alias du='du -h'
+
+# Gruvbox themes for neovim fix
+source /Users/tuong/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
 
 # Git integration
 source ~/.config/zsh/git-integration.zsh
