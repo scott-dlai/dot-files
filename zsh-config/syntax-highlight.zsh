@@ -3,14 +3,14 @@
 typeset -A ZSH_HIGHLIGHT_STYLES
 
 # Enable main and cursor highlighting
-# ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 
 # Change color of highlighted command
 ZSH_HIGHLIGHT_STYLES[command]='fg=green'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[alias]='fg=cyan,bold'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=yellow'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='bold'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='bold'
 
 # Change the color of the character that the cursor is on
-# ZSH_HIGHLIGHT_STYLES[cursor]='standout'
+ZSH_HIGHLIGHT_STYLES[cursor]='standout'
