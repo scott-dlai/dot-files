@@ -33,10 +33,6 @@ function mnml_git {
     fi
 }
 
-function mnml_me_git {
-    git -c color.status=always status -sb 2> /dev/null
-}
-
 # Wrappers & utils
 # join outpus of components
 function mnml_wrap {
