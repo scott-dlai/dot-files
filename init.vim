@@ -11,9 +11,7 @@ Plug 'autozimu/LanguageClient-neovim', {
 " Utilities
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
-Plug 'ajh17/VimCompletesMe'
 Plug 'preservim/nerdcommenter'
-Plug 'yggdroot/indentline'
 " Haskell
 Plug 'dense-analysis/ale'
 Plug 'neovimhaskell/haskell-vim'
@@ -21,7 +19,8 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'ocaml/vim-ocaml'
 " Themes
 Plug 'dkasak/gruvbox'
-Plug 'patstockwell/vim-monokai-tasty'
+" Plug 'patstockwell/vim-monokai-tasty'
+" Plug 'joshdick/onedark.vim'
 " Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -33,17 +32,13 @@ syntax on
 
 " Themes and settings for status bar
 let g:airline_theme='gruvbox'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#enabled=1
+let g:airline_powerline_fonts = 1
 
 " Themes for editor
 set bg=dark
-let g:gruvbox_contrast_dark = 'soft'
+let g:gruvbox_contrast_dark='soft'
 colorscheme gruvbox
-
-" Set the character to show level of indentation
-let g:indentLine_char = '|'
 
 " Show hidden files for NERDTREE
 let NERDTreeShowHidden=1
