@@ -3,12 +3,12 @@
 typeset -A ZSH_HIGHLIGHT_STYLES
 
 # Enable main and cursor highlighting
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
 
 # Change color of highlighted command
 ZSH_HIGHLIGHT_STYLES[command]='fg=green'
 ZSH_HIGHLIGHT_STYLES[builtin]='fg=cyan'
-ZSH_HIGHLIGHT_STYLES[alias]='fg=yellow'
+ZSH_HIGHLIGHT_STYLES[alias]='fg=blue'
 ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='bold'
 ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='bold'
 
