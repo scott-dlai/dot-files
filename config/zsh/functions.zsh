@@ -1,11 +1,11 @@
-function vimg {
+function vimr {
   if [[ $# -gt 0 ]]; then
     if [ -d $1 ]; then
-      vimr --cwd $1
+      /usr/local/bin/vimr --cwd $1
     else
-      vimr $1
+      /usr/local/bin/vimr $1
     fi
   else
-    vimr
+    /usr/local/bin/vimr
   fi
 }
