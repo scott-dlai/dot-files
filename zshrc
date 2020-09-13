@@ -2,6 +2,8 @@
 export PS1="
 %U%1~%u %# "
 
+export HISTFILE=/Users/scott/.cache/zsh/zsh_history
+
 export CLICOLOR=1
 
 export LSCOLORS=exfxcxdxbxegedabagacad
