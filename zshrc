@@ -6,6 +6,8 @@ export CLICOLOR=1
 
 export LSCOLORS=exfxcxdxbxegedabagacad
 
+bindkey -e
+
 # aliases
 source ~/.config/zsh/alias.zsh
 
