@@ -22,3 +22,4 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Change color of highlighted command
 source ~/.config/zsh/syntax-highlight.zsh
+

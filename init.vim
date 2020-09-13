@@ -52,7 +52,7 @@ set noshiftround
 set colorcolumn=80
 set cursorline
 " Show trailing white space
-set listchars=trail:~
+set listchars=tab:\|\ ,trail:~
 set list
 " Show line number
 set number
@@ -89,5 +89,5 @@ nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
-inoremap jj <Esc>
+inoremap <C-j> <Esc>
 
