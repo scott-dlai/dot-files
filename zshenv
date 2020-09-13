@@ -10,5 +10,5 @@ PATH="$PATH:/usr/local/bin/python3.8"
 # Homebrew (brew doctor)
 PATH="$PATH:/usr/local/sbin"
 
-export PATH EDITOR
+export PATH
 
