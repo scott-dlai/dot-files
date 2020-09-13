@@ -1,4 +1,4 @@
-ZDOTDIR="/Users/scott/.config/zsh"
+ZDOTDIR="$HOME/.config/zsh"
 
 EDITOR="/usr/local/bin/nvim"
 
