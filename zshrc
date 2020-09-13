@@ -6,6 +6,7 @@ export CLICOLOR=1
 
 export LSCOLORS=exfxcxdxbxegedabagacad
 
+# Stop zsh from silently switch to vi mode.
 bindkey -e
 
 # aliases
