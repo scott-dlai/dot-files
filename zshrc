@@ -12,16 +12,19 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 bindkey -e
 
 # aliases
-source ~/.config/zsh/alias.zsh
+source $HOME/.config/zsh/aliases.zsh
 
 # functions
-source ~/.config/zsh/functions.zsh
+source $HOME/.config/zsh/functions/*.zsh
 
 # Gruvbox themes for neovim fix
-source /Users/scott/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
+source $HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
 
 # Git integration
-source ~/.config/zsh/git-integration.zsh
+source $HOME/.config/zsh/git-integration.zsh
+
+# Other
+source $HOME/.config/zsh/other/*.zsh
 
 # Syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
