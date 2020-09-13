@@ -92,4 +92,5 @@ nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 inoremap jj <Esc>
 noremap <C-k> {
 noremap <C-j> }
+nnoremap ; :
 
