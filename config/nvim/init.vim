@@ -27,18 +27,21 @@ filetype plugin indent on
 syntax on
 
 " Themes and settings for status bar
-let g:airline_theme='nord'
+let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled=1
 let g:airline_powerline_fonts = 1
 
 " Themes for editor
 set bg=dark
-" let g:gruvbox_contrast_dark='soft'
-colorscheme nord
+let g:gruvbox_contrast_dark='soft'
+colorscheme gruvbox
 
 " Show hidden files for NERDTREE
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$', '\.git$']
+
+" Automatically close NERDTree when openning a file.
+let NERDTreeQuitOnOpen = 1
 
 " Whitespace setting
 set wrap
@@ -93,4 +96,4 @@ inoremap jj <Esc>
 noremap <C-k> {
 noremap <C-j> }
 nnoremap ; :
-
+vnoremap ; :
