@@ -16,7 +16,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Ocaml
 Plug 'ocaml/vim-ocaml'
 " Themes
-Plug 'dkasak/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 " Status bar
 Plug 'vim-airline/vim-airline'
