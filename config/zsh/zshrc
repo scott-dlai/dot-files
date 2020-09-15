@@ -15,7 +15,9 @@ bindkey -e
 source $HOME/.config/zsh/aliases.zsh
 
 # functions
-source $HOME/.config/zsh/functions/*.zsh
+for function in $HOME/.config/zsh/functions/*.zsh; do
+  source $function
+done
 
 # Gruvbox themes for neovim fix
 source $HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
@@ -24,7 +26,9 @@ source $HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
 source $HOME/.config/zsh/git-integration.zsh
 
 # Other
-source $HOME/.config/zsh/other/*.zsh
+for file in $HOME/.config/zsh/other/*.zsh; do
+  source $file
+done
 
 # Syntax highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
