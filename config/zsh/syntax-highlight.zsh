@@ -3,7 +3,7 @@
 typeset -A ZSH_HIGHLIGHT_STYLES
 
 # Enable main and cursor highlighting
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main)
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main cursor)
 
 # Change color of highlighted command
 ZSH_HIGHLIGHT_STYLES[command]='fg=green'
