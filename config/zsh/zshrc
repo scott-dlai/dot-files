@@ -1,6 +1,5 @@
 # Prompt
-export PS1="
-%U%1~%u %# "
+source $HOME/.config/zsh/prompt.zsh
 
 export HISTFILE=/Users/scott/.cache/zsh/zsh_history
 
