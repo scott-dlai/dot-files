@@ -1,9 +1,5 @@
-set nocompatible
-filetype off
-
 " Plugins
 call plug#begin()
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
@@ -16,7 +12,7 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Ocaml
 Plug 'ocaml/vim-ocaml'
 " Themes
-Plug 'gruvbox-community/gruvbox'
+Plug 'scott-dlai/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 " Status bar
 Plug 'vim-airline/vim-airline'
@@ -29,7 +25,7 @@ syntax on
 " Themes and settings for status bar
 let g:airline_theme='gruvbox'
 let g:airline#extensions#tabline#enabled=1
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
 " Themes for editor
 set bg=dark
@@ -68,6 +64,10 @@ set cmdheight=2
 highlight Comment cterm=italic gui=italic
 " Adds space to the left of comments
 let g:NERDSpaceDelims = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
 
 " Other
 set hidden
