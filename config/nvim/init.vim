@@ -93,7 +93,9 @@ nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 
 inoremap jj <Esc>
+vnoremap q <Esc>
 noremap <C-k> {
 noremap <C-j> }
 nnoremap ; :
 vnoremap ; :
+vnoremap c :'<,'>w !pbcopy<CR><CR>
