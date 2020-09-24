@@ -3,6 +3,9 @@ source $HOME/.config/zsh/prompt.zsh
 
 export HISTFILE=/Users/scott/.cache/zsh/zsh_history
 
+export VISUAL="/usr/local/bin/nvim"
+export EDITOR=$VISUAL
+
 export CLICOLOR=1
 
 export LSCOLORS=exfxcxdxbxegedabagacad
