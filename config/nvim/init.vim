@@ -42,9 +42,9 @@ let NERDTreeQuitOnOpen = 1
 set wrap
 set textwidth=80
 set formatoptions=tcqrn1
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set expandtab
 set noshiftround
 set colorcolumn=80
@@ -76,6 +76,7 @@ set splitbelow splitright
 " Ocaml/merlin setup
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
+autocmd FileType ocaml set tabstop=2|set shiftwidth=2
 
 " Intellisense
 let g:deoplete#enable_at_startup = 1
