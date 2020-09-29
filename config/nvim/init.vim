@@ -96,5 +96,7 @@ vnoremap q <Esc>
 noremap <C-k> {
 noremap <C-j> }
 nnoremap ; :
+nnoremap <Tab> >>_
+nnoremap <S-Tab> <<_
 vnoremap ; :
 vnoremap c :'<,'>w !pbcopy<CR><CR>
