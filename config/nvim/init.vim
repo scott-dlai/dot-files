@@ -77,12 +77,16 @@ set splitbelow splitright
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 autocmd FileType ocaml set tabstop=2|set shiftwidth=2
+au FileType ocaml let b:AutoPairs = AutoPairsDefine({'(*' : '*)'})
 
 " Intellisense
 let g:deoplete#enable_at_startup = 1
 let g:LanguageClient_serverCommands = {
 \   'ocaml':            ['ocamllsp'],
 \}
+
+" toggle terminal
+source $HOME/.config/nvim/toggle_terminal.vim
 
 " Remap keys
 map <silent> <C-o> :NERDTreeToggle<CR>
@@ -101,3 +105,4 @@ nnoremap <Tab> >>_
 nnoremap <S-Tab> <<_
 vnoremap ; :
 vnoremap c :'<,'>w !pbcopy<CR><CR>
+tnoremap jj <C-\><C-n>
