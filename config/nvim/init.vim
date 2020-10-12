@@ -88,25 +88,13 @@ let g:LanguageClient_serverCommands = {
 " toggle terminal
 source $HOME/.config/nvim/toggle_terminal.vim
 
-" Remap keys
+" remap keys
+source $HOME/.config/nvim/remap_key.vim
+
+" Remap keys for plugins
 map <silent> <C-o> :NERDTreeToggle<CR>
 map <C-\> <plug>NERDCommenterToggle
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-
-inoremap jj <Esc>
-vnoremap q <Esc>
-noremap <C-k> {
-noremap <C-j> }
-nnoremap ; :
-nnoremap <Tab> >>_
-nnoremap <S-Tab> <<_
-nnoremap <Left> :vertical resize +2<CR>
-nnoremap <Right> :vertical resize -2<CR>
-nnoremap <Up> :resize -2<CR>
-nnoremap <Down> :resize +2<CR>
-vnoremap ; :
-vnoremap c :'<,'>w !pbcopy<CR><CR>
-tnoremap jj <C-\><C-n>
