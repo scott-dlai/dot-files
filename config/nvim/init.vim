@@ -39,7 +39,7 @@ let NERDTreeIgnore=['\.DS_Store$', '\.git$']
 let NERDTreeQuitOnOpen = 1
 
 " Whitespace setting
-set wrap
+set nowrap
 set textwidth=80
 set formatoptions=tcqrn1
 set tabstop=4
