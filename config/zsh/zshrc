@@ -14,7 +14,7 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 bindkey -e
 
 # aliases
-source $HOME/.config/zsh/aliases.zsh
+[ -f $HOME/.config/zsh/aliases.zsh ] && source $HOME/.config/zsh/aliases.zsh
 
 # functions
 for function in $HOME/.config/zsh/functions/*.zsh; do
@@ -22,7 +22,7 @@ for function in $HOME/.config/zsh/functions/*.zsh; do
 done
 
 # Gruvbox themes for neovim fix
-source $HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
+[ -f $HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh ] && source $HOME/.config/nvim/plugged/gruvbox/gruvbox_256palette.sh
 
 # Git integration
 source $HOME/.config/zsh/git-integration.zsh
@@ -33,8 +33,13 @@ for file in $HOME/.config/zsh/other/*.zsh; do
 done
 
 # Syntax highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+[ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Change color of highlighted command
-source ~/.config/zsh/syntax-highlight.zsh
+[ -f ~/.config/zsh/syntax-highlight.zsh ] && source ~/.config/zsh/syntax-highlight.zsh
+
+# fzf
+[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
+
+[ -f ~/.config/zsh/fzf-config.zsh ] && source ~/.config/zsh/fzf-config.zsh
 
