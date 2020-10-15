@@ -9,6 +9,8 @@ Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 " Ocaml
 Plug 'ocaml/vim-ocaml'
 " Themes
@@ -30,13 +32,6 @@ let g:airline#extensions#tabline#enabled=1
 set bg=dark
 let g:gruvbox_contrast_dark='soft'
 colorscheme gruvbox
-
-" Show hidden files for NERDTREE
-let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.DS_Store$', '\.git$']
-
-" Automatically close NERDTree when openning a file.
-let NERDTreeQuitOnOpen = 1
 
 " Whitespace setting
 set nowrap
@@ -92,9 +87,10 @@ source $HOME/.config/nvim/toggle_terminal.vim
 source $HOME/.config/nvim/remap_key.vim
 
 " Remap keys for plugins
-map <silent> <C-o> :NERDTreeToggle<CR>
 map <C-\> <plug>NERDCommenterToggle
 nnoremap <F5> :call LanguageClient_contextMenu()<CR>
 nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
 nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+nnoremap gb :Buffers<CR>
+nnoremap gt :Files<CR>
