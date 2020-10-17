@@ -1,10 +1,10 @@
 " Plugins
 call plug#begin()
+" Utilities
 Plug 'autozimu/LanguageClient-neovim', {
     \ 'branch': 'next',
     \ 'do': 'bash install.sh',
     \ }
-" Utilities
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
@@ -48,8 +48,7 @@ set cursorline
 set listchars=tab:\|\ ,trail:~
 set list
 " Show line number
-set number
-set relativenumber
+set number relativenumber
 " Mouse support
 set mouse=a
 " Set the height of the command window.
@@ -66,6 +65,7 @@ let g:NERDCompactSexyComs = 1
 " Other
 set hidden
 set splitbelow splitright
+au TermOpen * setlocal nonumber norelativenumber
 
 " Ocaml language server configuration
 " Ocaml/merlin setup
@@ -87,10 +87,11 @@ source $HOME/.config/nvim/toggle_terminal.vim
 source $HOME/.config/nvim/remap_key.vim
 
 " Remap keys for plugins
-map <C-\> <plug>NERDCommenterToggle
-nnoremap <F5> :call LanguageClient_contextMenu()<CR>
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-nnoremap gb :Buffers<CR>
-nnoremap gt :Files<CR>
+map \\ <plug>NERDCommenterToggle
+nmap <F5> :call LanguageClient_contextMenu()<CR>
+nmap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nmap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+nmap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
+nmap <Space> :Buffers<CR>
+nmap <CR> :Files<CR>
+nmap <C-f> :BLines<CR>
