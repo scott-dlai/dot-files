@@ -25,7 +25,7 @@ nnoremap <C-l> <C-w>l
 nnoremap <C-w> <C-w>w
 
 " visual mode
-vnoremap v <Esc>
+vnoremap q <Esc>
 
 " Terminal mode
 tnoremap <expr> jj (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
