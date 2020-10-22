@@ -6,7 +6,7 @@ autoload -Uz compinit && compinit
 AHEAD="${AHEAD:-2}"
 BEHIND="${BEHIND:-1}"
 WARNING="${WARNING:-3}"
-NORMAL="${NORMAL:-7}"
+NORMAL="${NORMAL:-15}"
 
 [ -z "$MNML_RPROMPT" ] && MNML_RPROMPT=(mnml_git)
 
