@@ -11,6 +11,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'sheerun/vim-polyglot'
 " Ocaml
 Plug 'ocaml/vim-ocaml'
 " Themes
@@ -19,6 +20,9 @@ Plug 'arcticicestudio/nord-vim'
 " Status bar
 Plug 'vim-airline/vim-airline'
 call plug#end()
+
+set undodir=~/.cache/vim-undodir/
+set undofile
 
 " Enables syntax highlighting
 filetype plugin indent on
@@ -80,6 +84,8 @@ let g:LanguageClient_serverCommands = {
 \   'ocaml':            ['ocamllsp'],
 \}
 
+let NERDTreeQuitOnOpen=1
+
 " toggle terminal
 source $HOME/.config/nvim/toggle_terminal.vim
 
@@ -87,11 +93,13 @@ source $HOME/.config/nvim/toggle_terminal.vim
 source $HOME/.config/nvim/remap_key.vim
 
 " Remap keys for plugins
+let g:AutoPairsShortcutToggle = ''
+map <M-Tab> :NERDTreeToggle<CR>
 map \\ <plug>NERDCommenterToggle
 nmap <F5> :call LanguageClient_contextMenu()<CR>
-nmap <silent> K :call LanguageClient#textDocument_hover()<CR>
+nmap <silent> <CR> :call LanguageClient#textDocument_hover()<CR>
 nmap <silent> gd :call LanguageClient#textDocument_definition()<CR>
 nmap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 nmap <Space> :Buffers<CR>
-nmap <CR> :Files<CR>
-nmap <C-f> :BLines<CR>
+nmap <M-p> :Files<CR>
+nmap <M-f> :BLines<CR>
