@@ -10,8 +10,19 @@ export CLICOLOR=1
 
 export LSCOLORS=exfxcxdxbxegedabagacad
 
-# Stop zsh from silently switch to vi mode.
-bindkey -e
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots) # Include hidden files.
+
+# Vi mode for zsh
+[ -f $HOME/.config/zsh/vim.zsh ] && source $HOME/.config/zsh/vim.zsh
+
+# fzf
+[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
+[ -f ~/.config/zsh/fzf-config.zsh ] && source ~/.config/zsh/fzf-config.zsh
 
 # aliases
 [ -f $HOME/.config/zsh/aliases.zsh ] && source $HOME/.config/zsh/aliases.zsh
@@ -37,9 +48,4 @@ done
 
 # Change color of highlighted command
 [ -f ~/.config/zsh/syntax-highlight.zsh ] && source ~/.config/zsh/syntax-highlight.zsh
-
-# fzf
-[ -f ~/.config/zsh/.fzf.zsh ] && source ~/.config/zsh/.fzf.zsh
-
-[ -f ~/.config/zsh/fzf-config.zsh ] && source ~/.config/zsh/fzf-config.zsh
 
