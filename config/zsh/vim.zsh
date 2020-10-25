@@ -2,7 +2,7 @@
 # https://gist.github.com/LukeSmithxyz/e62f26e55ea8b0ed41a65912fbebbe52
 bindkey -v
 
-export KEYTIMEOUT=20
+export KEYTIMEOUT=25
 
 zstyle ':completion:*' menu select
 

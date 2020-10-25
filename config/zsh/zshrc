@@ -1,3 +1,6 @@
+# Enable colors
+autoload -U colors && colors
+
 # Prompt
 source $HOME/.config/zsh/prompt.zsh
 
@@ -45,7 +48,6 @@ done
 
 # Syntax highlighting
 [ -f /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Change color of highlighted command
 [ -f ~/.config/zsh/syntax-highlight.zsh ] && source ~/.config/zsh/syntax-highlight.zsh
 
