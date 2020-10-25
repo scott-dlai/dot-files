@@ -1,14 +1,10 @@
 " Plugins
 call plug#begin()
 " Utilities
-Plug 'autozimu/LanguageClient-neovim', {
-    \ 'branch': 'next',
-    \ 'do': 'bash install.sh',
-    \ }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdtree'
 Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdcommenter'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
@@ -78,12 +74,6 @@ execute "set rtp+=" . g:opamshare . "/merlin/vim"
 autocmd FileType ocaml set tabstop=2|set shiftwidth=2
 au FileType ocaml let b:AutoPairs = AutoPairsDefine({'(*' : '*)'})
 
-" Intellisense
-let g:deoplete#enable_at_startup = 1
-let g:LanguageClient_serverCommands = {
-\   'ocaml':            ['ocamllsp'],
-\}
-
 let NERDTreeQuitOnOpen=1
 
 " toggle terminal
@@ -92,14 +82,13 @@ source $HOME/.config/nvim/toggle_terminal.vim
 " remap keys
 source $HOME/.config/nvim/remap_key.vim
 
+" Coc configuration
+source $HOME/.config/nvim/coc-config.vim
+
 " Remap keys for plugins
 let g:AutoPairsShortcutToggle = ''
 map <M-Tab> :NERDTreeToggle<CR>
 map \\ <plug>NERDCommenterToggle
-nmap <F5> :call LanguageClient_contextMenu()<CR>
-nmap <silent> <CR> :call LanguageClient#textDocument_hover()<CR>
-nmap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nmap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 nmap <Space> :Buffers<CR>
 nmap <M-p> :Files<CR>
 nmap <M-f> :BLines<CR>
