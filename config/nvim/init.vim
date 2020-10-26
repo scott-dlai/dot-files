@@ -8,6 +8,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'tpope/vim-fugitive'
 " Ocaml
 Plug 'ocaml/vim-ocaml'
 " Themes
@@ -25,7 +26,7 @@ filetype plugin indent on
 syntax on
 
 " Themes and settings for status bar
-let g:airline_theme='gruvbox'
+set noshowmode
 let g:airline#extensions#tabline#enabled=1
 
 " Themes for editor
@@ -61,6 +62,8 @@ let g:NERDSpaceDelims = 1
 let g:NERDToggleCheckAllLines = 1
 " Use compact syntax for prettified multi-line comments
 let g:NERDCompactSexyComs = 1
+" Close NERDTree when open a file
+let NERDTreeQuitOnOpen=1
 
 " Other
 set hidden
@@ -73,8 +76,6 @@ let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 autocmd FileType ocaml set tabstop=2|set shiftwidth=2
 au FileType ocaml let b:AutoPairs = AutoPairsDefine({'(*' : '*)'})
-
-let NERDTreeQuitOnOpen=1
 
 " toggle terminal
 source $HOME/.config/nvim/toggle_terminal.vim
