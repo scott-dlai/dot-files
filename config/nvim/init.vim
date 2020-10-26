@@ -27,6 +27,7 @@ syntax on
 
 " Themes and settings for status bar
 set noshowmode
+let g:airline_symbols.branch = ''
 let g:airline#extensions#tabline#enabled=1
 
 " Themes for editor
