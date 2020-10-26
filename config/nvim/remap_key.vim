@@ -5,6 +5,7 @@ inoremap <C-k> <C-p>
 
 " normal, visual and operator pending mode
 noremap <C-c> "+y
+noremap <C-p> "+p
 noremap K {
 noremap J }
 noremap B ^
