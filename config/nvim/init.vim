@@ -27,6 +27,10 @@ syntax on
 
 " Themes and settings for status bar
 set noshowmode
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.branch = ''
 let g:airline#extensions#tabline#enabled=1
 
