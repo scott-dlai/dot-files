@@ -12,7 +12,7 @@ Plug 'tpope/vim-fugitive'
 " Ocaml
 Plug 'ocaml/vim-ocaml'
 " Themes
-Plug 'scott-dlai/gruvbox'
+Plug 'gruvbox-community/gruvbox'
 Plug 'arcticicestudio/nord-vim'
 " Status bar
 Plug 'vim-airline/vim-airline'
@@ -36,7 +36,7 @@ let g:airline#extensions#tabline#enabled=1
 
 " Themes for editor
 set bg=dark
-let g:gruvbox_contrast_dark='soft'
+let g:gruvbox_contrast_dark='medium'
 colorscheme gruvbox
 
 " Whitespace setting
@@ -80,7 +80,7 @@ au TermOpen * setlocal nonumber norelativenumber
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 autocmd FileType ocaml set tabstop=2|set shiftwidth=2
-au FileType ocaml let b:AutoPairs = AutoPairsDefine({'(*' : '*)'})
+au Filetype ocaml let b:AutoPairs={'(':')', '[':']', '{':'}','"':'"', '(*':'*)'}
 
 " toggle terminal
 source $HOME/.config/nvim/toggle_terminal.vim
@@ -95,6 +95,6 @@ source $HOME/.config/nvim/coc-config.vim
 let g:AutoPairsShortcutToggle = ''
 map <M-Tab> :NERDTreeToggle<CR>
 map \\ <plug>NERDCommenterToggle
-nmap <Space> :Buffers<CR>
+nmap <C-Space> :Buffers<CR>
 nmap <M-p> :Files<CR>
 nmap <M-f> :BLines<CR>
