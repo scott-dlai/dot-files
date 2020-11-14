@@ -1,7 +1,5 @@
 " Insert mode
-inoremap jj <Esc>
-inoremap <C-j> <C-n>
-inoremap <C-k> <C-p>
+inoremap <C-j> <Esc>
 
 " normal, visual and operator pending mode
 noremap <C-c> "+y
@@ -29,5 +27,5 @@ nnoremap <C-w> <C-w>w
 vnoremap q <Esc>
 
 " Terminal mode
-tnoremap <expr> jj (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
+tnoremap <expr> <C-j> (&filetype == "fzf") ? "<Esc>" : "<c-\><c-n>"
 
