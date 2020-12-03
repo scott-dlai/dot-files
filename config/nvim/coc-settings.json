@@ -1,18 +1,23 @@
 {
-    "languageserver": {
-        "ocaml-lsp": {
-            "command": "opam",
-            "args": [
-                "config",
-                "exec",
-                "--",
-                "ocamllsp"
-            ],
-            "filetypes": [
-                "ocaml",
-                "reason"
-            ]
-        }
+  "languageserver": {
+    "ocaml-lsp": {
+      "command": "opam",
+      "args": [
+        "config",
+        "exec",
+        "--",
+        "ocamllsp"
+      ],
+      "filetypes": [
+        "ocaml",
+        "reason"
+      ]
     },
-    "python.jediEnabled": false
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+  },
+  "python.jediEnabled": false
 }
