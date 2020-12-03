@@ -11,6 +11,4 @@ alias du='du -h'
 alias df='df -h'
 alias python='/usr/local/bin/python3'
 alias pip='/usr/local/bin/pip3'
-alias g++='g++-10'
-alias gcc='gcc-10'
 
