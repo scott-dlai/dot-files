@@ -9,6 +9,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Ocaml
 Plug 'ocaml/vim-ocaml'
 " Themes
@@ -79,8 +80,13 @@ au TermOpen * setlocal nonumber norelativenumber
 " Ocaml/merlin setup
 let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
-autocmd FileType ocaml set tabstop=2|set shiftwidth=2
 au Filetype ocaml let b:AutoPairs={'(':')', '[':']', '{':'}','"':'"', '(*':'*)'}
+
+" Golang
+let g:go_doc_keywordprg_enabled = 0
+
+" File that use 2 spaces for tab
+autocmd FileType ocaml,json set tabstop=2|set shiftwidth=2
 
 " toggle terminal
 source $HOME/.config/nvim/toggle_terminal.vim
@@ -93,6 +99,7 @@ source $HOME/.config/nvim/coc-config.vim
 
 " Remap keys for plugins
 let g:AutoPairsShortcutToggle = ''
+autocmd FileType go map gk <Plug>(go-doc)
 map <M-Tab> :NERDTreeToggle<CR>
 map \\ <plug>NERDCommenterToggle
 nmap <C-Space> :Buffers<CR>
