@@ -1,1 +1,119 @@
-/Users/scott/Library/Application Support/Code/User/settings.json
+{
+  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "editor.rulers": [80, 120],
+  "editor.fontSize": 14,
+  "window.zoomLevel": 1,
+  "workbench.iconTheme": "material-icon-theme",
+  "keyboard.touchbar.enabled": false,
+  "python.showStartPage": false,
+  "debug.console.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  // "python.formatting.autopep8Path": "/usr/local/bin/autopep8",
+  "debug.showBreakpointsInOverviewRuler": true,
+  "editor.formatOnPaste": true,
+  "[javascript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[reasonml]": {
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.tabSize": 2
+  },
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.preferences.quoteStyle": "single",
+  "prettier.jsxSingleQuote": true,
+  "prettier.singleQuote": true,
+  "python.linting.pylintPath": "/usr/local/bin/pylint",
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "python.formatting.blackPath": "/usr/local/bin/black",
+  "python.linting.pylintArgs": [
+    //"--extension-pkg-whitelist=pygame",
+    "--unsafe-load-any-extension=y"
+  ],
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": ["--line-length", "80"],
+  "python.languageServer": "Pylance",
+  "files.associations": {
+    "*.tsx": "typescriptreact"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "kite.showWelcomeNotificationOnStartup": false,
+  "editor.renderWhitespace": "all",
+  "ocaml.sandbox": {
+    "kind": "opam",
+    "switch": "4.11.1"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "java.configuration.checkProjectSettingsExclusions": false,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["<C-j>"],
+      "after": ["<Esc>"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-p>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["K"],
+      "after": ["{"]
+    },
+    {
+      "before": [";"],
+      "commands": ["workbench.action.showCommands"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["J"],
+      "after": ["}"]
+    },
+    {
+      "before": ["K"],
+      "after": ["{"]
+    },
+    {
+      "before": [";"],
+      "commands": ["workbench.action.showCommands"]
+    }
+  ],
+  "editor.lineNumbers": "relative",
+  "editor.tabCompletion": "on",
+  "python.pythonPath": "/usr/local/bin/python3",
+  "[reason]": {
+    "editor.defaultFormatter": "jaredly.reason-vscode",
+    "editor.tabSize": 2
+  },
+  "editor.formatOnSave": true,
+  "editor.fontFamily": "'Source Code Pro for Powerline', 'Hack', Menlo, monospace"
+}
