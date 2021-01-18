@@ -19,5 +19,6 @@
       "filetypes": ["go"]
     }
   },
-  "python.jediEnabled": false
+  "python.jediEnabled": false,
+  "elixirLS.dialyzerEnabled": false
 }
