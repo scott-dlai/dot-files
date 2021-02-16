@@ -88,7 +88,7 @@ au Filetype ocaml let b:AutoPairs={'(':')', '[':']', '{':'}','"':'"', '(*':'*)'}
 let g:go_doc_keywordprg_enabled = 0
 
 " File that use 2 spaces for tab
-autocmd FileType ocaml,json set tabstop=2|set shiftwidth=2
+autocmd FileType ocaml,json,javascript,typescript set tabstop=2|set shiftwidth=2
 
 " toggle terminal
 source $HOME/.config/nvim/toggle_terminal.vim
