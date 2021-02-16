@@ -37,6 +37,7 @@ let g:airline_symbols.branch = ''
 let g:airline#extensions#tabline#enabled=1
 
 " Themes for editor
+set termguicolors
 set bg=dark
 let g:gruvbox_contrast_dark='medium'
 colorscheme gruvbox
