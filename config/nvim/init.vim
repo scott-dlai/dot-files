@@ -104,6 +104,6 @@ let g:AutoPairsShortcutToggle = ''
 autocmd FileType go map gk <Plug>(go-doc)
 map <M-Tab> :NERDTreeToggle<CR>
 map \\ <plug>NERDCommenterToggle
-nmap <C-Space> :Buffers<CR>
+nmap <Space> :Buffers<CR>
 nmap <M-p> :Files<CR>
 nmap <M-f> :BLines<CR>
