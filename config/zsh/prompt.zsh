@@ -1,5 +1,5 @@
 # Prompt
 export PS1="
-%B┌%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[red]%}]%{$reset_color%}─%B%{$fg[red]%}[%{$fg[blue]%}%1~%{$fg[red]%}]
-%{$reset_color%}└─$ %b"
+%B%{$fg[red]%}┌%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[red]%}]%{$fg[red]%}─%{$fg[red]%}[%{$fg[blue]%}%~%{$fg[red]%}]
+%{$fg[red]%}└─%{$fg[red]%}❯ %b"
 
