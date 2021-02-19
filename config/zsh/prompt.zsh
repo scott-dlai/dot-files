@@ -1,5 +1,5 @@
 # Prompt
 export PS1="
-%B%{$fg[red]%}┌%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[red]%}]%{$fg[red]%}─%{$fg[red]%}[%{$fg[blue]%}%~%{$fg[red]%}]
-%{$fg[red]%}└─%{$fg[red]%}❯ %b"
+%B%{$fg[cyan]%}┌%{$fg[cyan]%}[%{$fg[yellow]%}%n%{$fg[cyan]%}]%{$fg[cyan]%}─%{$fg[cyan]%}[%{$fg[blue]%}%~%{$fg[cyan]%}]
+%{$fg[cyan]%}└─%{$fg[cyan]%}❯ %b"
 
