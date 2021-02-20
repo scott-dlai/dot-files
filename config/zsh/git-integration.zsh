@@ -29,7 +29,7 @@ function mnml_git {
             statc="%{\e[0;3${NORMAL}m%}"
         fi
 
-        echo -n "$statc$bname%{\e[0m%}"
+        echo -n "$statc %\[$bname%\]%{\e[0m%}"
     fi
 }
 
