@@ -9,10 +9,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
 Plug 'tpope/vim-fugitive'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'junegunn/goyo.vim'
 " Language support
 Plug 'ocaml/vim-ocaml'
 Plug 'elixir-editors/vim-elixir'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 " Themes
 Plug 'gruvbox-community/gruvbox'
 Plug 'arcticicestudio/nord-vim'
