@@ -39,7 +39,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.preferences.quoteStyle": "single",
   "typescript.preferences.quoteStyle": "single",
@@ -60,15 +61,8 @@
     "*.tsx": "typescriptreact"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "kite.showWelcomeNotificationOnStartup": false,
   "editor.renderWhitespace": "all",
-  "ocaml.sandbox": {
-    "kind": "opam",
-    "switch": "4.11.1"
-  },
   "editor.suggestSelection": "first",
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "java.configuration.checkProjectSettingsExclusions": false,
   "vim.insertModeKeyBindings": [
     {
       "before": ["<C-j>"],
@@ -90,7 +84,7 @@
     },
     {
       "before": [";"],
-      "commands": ["workbench.action.showCommands"]
+      "after": [":"]
     },
     {
       "before": ["E"],
@@ -131,5 +125,17 @@
     "editor.tabSize": 2
   },
   "editor.formatOnSave": true,
-  "editor.fontFamily": "'Source Code Pro for Powerline', 'Hack', Menlo, monospace"
+  "editor.fontFamily": "'Source Code Pro for Powerline', 'Hack', Menlo, monospace",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "zenMode.hideLineNumbers": false,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "eslint.validate": ["typescript", "typescriptreact"]
 }
