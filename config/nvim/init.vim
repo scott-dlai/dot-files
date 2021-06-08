@@ -106,5 +106,5 @@ autocmd FileType go map gk <Plug>(go-doc)
 map <M-Tab> :NERDTreeToggle<CR>
 map \\ <plug>NERDCommenterToggle
 nmap <Space> :Buffers<CR>
-nmap <M-p> :Files<CR>
+nmap <C-p> :Files<CR>
 nmap <M-f> :BLines<CR>
