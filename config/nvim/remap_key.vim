@@ -2,8 +2,8 @@
 inoremap <C-j> <Esc>
 
 " normal, visual and operator pending mode
-noremap <C-c> "+y
-noremap <C-p> "+p
+noremap gy "+y
+noremap gp "+p
 noremap K {
 noremap J }
 noremap B ^
