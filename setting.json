@@ -93,6 +93,10 @@
     {
       "before": ["B"],
       "after": ["^"]
+    },
+    {
+      "before": ["\n"],
+      "commands": ["editor.action.showHover"]
     }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
@@ -126,12 +130,9 @@
   },
   "editor.formatOnSave": true,
   "editor.fontFamily": "'Source Code Pro for Powerline', 'Hack', Menlo, monospace",
-  "workbench.editorAssociations": [
-    {
-      "viewType": "jupyter.notebook.ipynb",
-      "filenamePattern": "*.ipynb"
-    }
-  ],
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
   "javascript.updateImportsOnFileMove.enabled": "always",
   "zenMode.hideLineNumbers": false,
   "[json]": {
